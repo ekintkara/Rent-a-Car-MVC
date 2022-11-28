@@ -1,0 +1,39 @@
+﻿@using Entity
+@model Entity.Product
+<div class="col-md-12 grid-margin stretch-card">
+    <div class="card " style="border:none !important;">
+        <div class="card-body ">
+
+            <form class="forms-sample" method="post" asp-action="Update" asp-controller="Product">
+                <div class="form-group d-none">
+                    <label for="CarId">CarID</label>
+                    <input readonly asp-for="CarId" type="text" class="form-control" placeholder="CarName">
+                </div>
+                <div class="form-group">
+                    <label for="CarName">CarName</label>
+                    <input asp-for="CarName" type="text" class="form-cont rol" placeholder="CarName">
+                </div>
+                <div class="form-group">
+                    <label for="CarPrice">CarPrice</label>
+                    <input asp-for="CarPrice" type="number" class="form-control" placeholder="CarPrice">
+                </div>
+                <div class="form-group">
+                    <label for="CarLuggage">CarLuggage</label>
+                    <input asp-for="CarLuggage" type="text" class="form-control" placeholder="CarLuggage">
+                </div>
+                <div class="form-group">
+                    <label for="CarQuantity">CarQuantity</label>
+                    <input asp-for="CarQuantity" type="text" class="form-control" placeholder="CarQuantity">
+                </div>
+
+                <div class="form-check form-check-flat form-check-primary">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input"> Remember me
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary mr-2 ">Submit</button>
+
+            </form>
+        </div>
+    </div>
+</div>

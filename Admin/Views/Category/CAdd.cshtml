@@ -1,0 +1,24 @@
+﻿@*@{
+    Layout = null;
+}*@
+<div class="col-md-12 grid-margin stretch-card">
+    <div class="card " style="border:none !important;">
+        <div class="card-body ">
+
+            <form class="forms-sample" method="post" asp-action="CAdd" asp-controller="Category">
+                <div class="form-group">
+                    <label for="prod">Category Name</label>
+                    <input name="CategoryName" type="text" class="form-control" id="prod" placeholder="Category Name">
+                </div>
+              
+                <div class="form-check form-check-flat form-check-primary">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input"> Remember me
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary mr-2 ">Submit</button>
+
+            </form>
+        </div>
+    </div>
+</div>
